@@ -1,5 +1,5 @@
 //variables to hold data
-var comment = ["Good job, stay below 30g!!!","Stop, you eat too much sugar!!!"];
+var comment = ["Good job, keep it low!!!","Sugar monster. STOP!!!"];
 var score= [];
 
 
