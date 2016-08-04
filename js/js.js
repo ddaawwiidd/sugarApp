@@ -24,9 +24,9 @@ function get(){
 function storeSugar(){
 	//adds new question value from the input field to qAccepted array
 	if(document.getElementById("question").value != ''){
-		if(document.getElementById("question").value < 0){
+		if(parseInt(document.getElementById("question").value) < 0){
 			document.getElementById("comment").innerHTML = comment[3];
-		} else {
+		} else if (parseInt(document.getElementById("question").value) >= 0) {
 			//adds new score to score array
 			score.push(parseInt(document.getElementById("question").value));
 			//prints sum of scores from array score
