@@ -11,11 +11,11 @@ I love free sugar (sweets) and I have problem with controling my desire. So, I d
 <strong>Here it is ... <a href="https://ddaawwiidd.github.io/sugarApp/">sugarApp</a>.</strong> 
 
 <strong>sugarApp</strong> is very simple. </br>
-1.	You put how much grams of sugar you have eaten,</br>
+1.	You put how many grams of sugar you have eaten,</br>
 2.	And you press <strong>Add</strong> button to save it.</br>
 
 Depending on your sugar consumption level <strong>sugarApp</strong> will cheer you or nag you.   
-When the new day starts, you press <strong>New day</strong> button and your count start from zero again.
+When the new day starts, you press <strong>New day</strong> button and your count starts from zero again.
 
 <h4>Why</h4>
 
