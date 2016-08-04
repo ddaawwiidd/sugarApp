@@ -8,7 +8,7 @@ I love free sugar (sweets) and I have problem with controling my desire. So, I d
 
 <h4>What</h4>
 
-<strong>Here it is ... “sugarApp”.</strong> 
+<strong>Here it is ... <a href="https://ddaawwiidd.github.io/sugarApp/">sugarApp</a>.</strong> 
 
 <strong>sugarApp</strong> is very simple. </br>
 1.	You put how much grams of sugar you have eaten,</br>
