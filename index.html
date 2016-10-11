@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="storeForOffline.appcache">
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>sugarApp</title>
-  <meta name="sugarApp is an online suger log app that helps reduce sugar consumption." content="">
+  <meta name="sugarApp is an online suger log that helps to reduce suger consumption." content="">
   <meta name="dawid-jkw" content="">
 
   <!-- Mobile Specific Metas
@@ -31,24 +31,25 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<div class="container">
 		<section class="header">
-		  <a href="https://github.com/ddaawwiidd/sugarApp/blob/gh-pages/README.md">
-			  <img src="images/sugar.png" alt="Sugar cubes" height="212" width="212">
-		  </a>
-		  <h5>sugarApp</h5>
+		<a href="https://github.com/ddaawwiidd/sugarApp/blob/gh-pages/README.md">
+			<img src="images/sugar.png" alt="Sugar cubes" height="212" width="212">
+		</a>
+		<h5>sugarApp</h5>
 		</section>
-		
-			<form>
-				<lable for="what">How much free sugar did you have?</lable>
-				<input class="u-full-width" type="number" placeholder="Type number of grams." id="question">
-				<input class="button-primary" type="button" value="Add" onclick="storeSugar()">
-			</form>
-			<div id="score">
-				<p><div id="points"></div></p>
-				<span id="comment"></span>
+		<div class="row">
+			<div class="five columns">
+				<form>
+					<lable for="what">How much sugar did you have?</lable>
+					<input class="u-full-width" type="number" pattern="^[1-9]\d*$" placeholder="Type number of grams." id="question">
+					<input class="button-primary" type="button" value="Save" onclick="storeSugar()">
+				</form>
+				<div id="score">
+					<p><div id="points"></div></p>
+					<span id="comment"></span>
+				</div>
 			</div>
-			
-	
-		<input class="button" id="clearStorage" type="button" value="New day" onclick="clearStorage()">
+		</div>
+		<input class="button" id="clearStorage" type="button" value="Restart" onclick="clearStorage()">	
 	</div>
 	
 	<footer>
