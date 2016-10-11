@@ -9,10 +9,16 @@ function get(){
 		document.getElementById("points").innerHTML = score.reduce((a, b) => a + b, 0)+"g";
 		if (score.reduce((a, b) => a + b, 0) > 50){
 			document.getElementById("comment").innerHTML = comment[1];
+			document.getElementById("points").style.backgroundColor="#da2f1d";
+			document.getElementById("points").style.color="#fff";
 		} else if (score.reduce((a, b) => a + b, 0) <= 50 && score.reduce((a, b) => a + b, 0) >= 30) {
 			document.getElementById("comment").innerHTML = comment[2];
+			document.getElementById("points").style.backgroundColor="#f3ba29";
+			document.getElementById("points").style.color="#222";
 		} else if (score.reduce((a, b) => a + b, 0) >= 0 && score.reduce((a, b) => a + b, 0) < 30) {
 			document.getElementById("comment").innerHTML = comment[0];
+			document.getElementById("points").style.backgroundColor="#09c111";
+			document.getElementById("points").style.color="#fff";
 		} else {
 			document.getElementById("comment").innerHTML = comment[3];
 		}
@@ -34,12 +40,18 @@ function storeSugar(){
 			//evaluates total score so far and prints comment
 			if (score.reduce((a, b) => a + b, 0) > 50){
 				document.getElementById("comment").innerHTML = comment[1];
+				document.getElementById("points").style.backgroundColor="#da2f1d";
+				document.getElementById("points").style.color="#fff";
 				save();
 			} else if (score.reduce((a, b) => a + b, 0) <= 50 && score.reduce((a, b) => a + b, 0) >= 30) {
 				document.getElementById("comment").innerHTML = comment[2];
+				document.getElementById("points").style.backgroundColor="#f3ba29";
+				document.getElementById("points").style.color="#222";
 				save();
 			} else if (score.reduce((a, b) => a + b, 0) >= 0 && score.reduce((a, b) => a + b, 0) < 30) {
 				document.getElementById("comment").innerHTML = comment[0];
+				document.getElementById("points").style.backgroundColor="#09c111";
+				document.getElementById("points").style.color="#fff";
 				save();
 			} else {
 			document.getElementById("comment").innerHTML = comment[3];
