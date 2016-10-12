@@ -4,6 +4,3 @@ css/normalize.css
 css/skeleton.css
 images/sugar.png
 js/js.js
-
-NETWORK:
-*
