@@ -1,0 +1,7 @@
+CACHE MANIFEST 
+css/my.css
+css/normalize.css
+css/skeleton.css
+images/sugar.png
+js/js.sj
+index.html
