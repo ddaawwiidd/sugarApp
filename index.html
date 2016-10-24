@@ -61,16 +61,12 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script src="js/js.js">
+	<script>
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/sw.js').then(function() {
-				console.log('Service worker registered');
-			}).catch(function() {
-				console.log('Service worker registration failed');
-			});
-		} else {
-			console.log('Service worker not supported');
-		}
+					navigator.serviceWorker.register('/sw.js').then(function(){ console.log('Service Worker Registered');
+					});
+			}
 	</script>
+	<script src="js/js.js"></script>
 </body>
 </html>
