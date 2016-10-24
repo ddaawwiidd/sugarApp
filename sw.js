@@ -2,13 +2,13 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('sugarApp').then(cache => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/css/my.css',
-        '/css/normalize.css',
-        '/css/skeleton.css',
-        '/js/js.js',
-        '/images/sugar.png'
+        '/sugarApp/',
+        '/sugarApp/index.html',
+        '/sugarApp/css/my.css',
+        '/sugarApp/css/normalize.css',
+        '/sugarApp/css/skeleton.css',
+        '/sugarApp/js/js.js',
+        '/sugarApp/images/sugar.png'
       ])
       .then(() => self.skipWaiting());
     })
