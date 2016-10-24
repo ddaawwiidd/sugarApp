@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest.appcache">
+<html lang="en">
 <head>
 
   <!-- Basic Page Needs
@@ -61,6 +61,16 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script src="js/js.js"></script>
+	<script src="js/js.js">
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js').then(function() {
+				console.log('Service worker registered');
+			}).catch(function() {
+				console.log('Service worker registration failed');
+			});
+		} else {
+			console.log('Service worker not supported');
+		}
+	</script>
 </body>
 </html>
