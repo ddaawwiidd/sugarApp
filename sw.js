@@ -3,7 +3,7 @@ self.addEventListener('install', e => {
     caches.open('sugarApp').then(cache => {
       return cache.addAll([
         '/sugarApp/',
-        '/sugarApp/index.html',
+       # '/sugarApp/index.html',
         '/sugarApp/css/my.css',
         '/sugarApp/css/normalize.css',
         '/sugarApp/css/skeleton.css',
