@@ -3,6 +3,7 @@
   "background_color": "#ffffff",
   "name": "sugarApp",
   "short_name": "sugarApp",
+  "start_url": "/index.html",
   "display": "standalone",
   "icons": [
     {
