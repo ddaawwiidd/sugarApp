@@ -6,7 +6,7 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "sugarIcon.png",
+      "src": "images/sugarIcon.png",
       "sizes": "144x144",
       "type": "image/png"
     }
